@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JetPack_Demo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+    <string name="alt">Alt</string>
+    <string name="i_m_the_next_page">I\'m the Next page.</string>
+    <string name="i_m_the_alternative_page">I\'m the Alternative page.</string>
+</resources>

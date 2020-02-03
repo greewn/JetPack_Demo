@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+<!-- When using the gui for connecting the fragments, actions will be created and you'll be using the id to call the actions -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.jetpack_demo.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_nextFragment"
+            app:destination="@id/nextFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_alternateFragment"
+            app:destination="@id/alternateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nextFragment"
+        android:name="com.example.jetpack_demo.NextFragment"
+        android:label="fragment_next"
+        tools:layout="@layout/fragment_next" />
+    <fragment
+        android:id="@+id/alternateFragment"
+        android:name="com.example.jetpack_demo.AlternateFragment"
+        android:label="fragment_alternate"
+        tools:layout="@layout/fragment_alternate" />
+</navigation>
